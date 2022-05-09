@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 
@@ -12,7 +12,7 @@ class Menu extends Component {
     const menu = this.props.dishes.map((dish) => {
       return (
         <div className="col-12 col-md-5 m-1" key={dish.id}>
-          <Card onClick={() => this.props.onClick(dish.id)}>
+          <Card>
             <CardImg width="100%" src={dish.image} alt={dish.name} />
             <CardImgOverlay>
               <CardTitle>{dish.name}</CardTitle>
